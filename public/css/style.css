@@ -1,0 +1,427 @@
+:root {
+    --background: #DBDBDB;
+    --teks: #E4E0E1;
+    --coklat-muda: #D6C0B3;
+    --coklat-agak-tua: #AB886D;
+    --coklat-tua: #493628;
+    --putih: #fff;
+    --hitam: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+.wrapper {
+    flex: 1;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: var(--coklat-muda);
+    height: 10vh;
+    display: flex;
+}
+
+.navbar-logo {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.navbar-logo a {
+    text-decoration: none;
+    color: var(--hitam);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.navbar-logo a:hover {
+    color: var(--putih);
+}
+
+.navbar-link {
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 2px var(--putih);
+}
+
+.navbar-link ul li {
+    display: inline;
+    padding: 20px;
+}
+
+.navbar-link ul a li:hover {
+    border-bottom: solid 3px var(--putih);
+}
+
+.navbar-link ul a {
+    text-decoration: none;
+    color: var(--hitam);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.navbar-link ul a:hover {
+    color: var(--putih);
+}
+/* ----------------------- */
+
+/* HERO */
+.hero-home {
+    padding-left: 10vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/bg-hero.jpg');
+    background-size: cover;
+}
+
+.hero-items-home {
+    display: block;
+}
+.hero-items-home h1 {
+    font-size: 40px;
+    color: var(--putih);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.hero-items-home p {
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--putih);
+}
+.hero-items-home button {
+    font-size: 16px;
+    margin-top: 8px;
+    padding: 8px 24px;
+    border-radius: 24px;
+    color: var(--hitam);
+    background-color: var(--coklat-agak-tua);
+    border: none;
+    cursor: pointer;
+}
+.hero-items-home button:hover {
+    background-color: var(--coklat-tua);
+}
+.hero-items-home button a {
+    color: var(--putih);
+    text-decoration: none;
+    cursor: pointer;
+}
+/* ----------------------- */
+
+/* MENU */
+.menu {
+    text-align: center;
+    background-color: var(--background);
+    margin: 32px 64px;
+    padding: 16px 0px;
+    border-radius: 16px;
+}
+.menu h2 {
+    margin: 16px 0px;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+.menu-img {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    column-gap: 24px;
+    padding-bottom: 20px;
+}
+.menu-img div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--putih);
+    width: 20%;
+    border-radius: 8px;
+    row-gap: 16px;
+    padding-bottom: 10px;
+}
+.menu-img div img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+.menu-img div h3 {
+    margin: 0;
+    font-size: 24px;
+    padding-top: 16px;
+}
+.menu-img div p {
+    margin: 0;
+    font-size: 16px;
+    padding: 0 16px;
+}
+.menu button {
+    padding: 8px 24px;
+    border-radius: 24px;
+    background-color: var(--coklat-agak-tua);
+    border: var(--putih);
+    cursor: pointer;
+}
+.menu button:hover {
+    background-color: var(--coklat-tua);
+}
+.menu button a{
+    color: var(--putih);
+    text-decoration: none;
+    font-size: 20px;
+}
+/* ----------------------- */
+
+/* CTA */
+.cta {
+    height: 40vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/bg-cta.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 32px 64px;
+    padding-left: 128px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+}
+.cta h3 {
+    color: var(--putih);
+    font-size: 40px;
+    font-weight: 600;
+}
+.cta p {
+    margin: 16px 0px;
+    color: var(--teks);
+    font-size: 20px;
+    font-weight: 500;
+    max-width: 50%;
+}
+.cta a {
+    margin: 16px 0px;
+    padding: 8px 24px;
+    border-radius: 24px;
+    color: var(--hitam);
+    background-color: var(--putih);
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+}
+.cta a:hover{
+    background-color: var(--coklat-agak-tua);
+    color: var(--putih);
+}
+/* ----------------------- */
+
+/* ABOUT US */
+.hero-about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/bg-about-us.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.hero-about h1 {
+    color: var(--putih);
+    font-size: 64px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.about-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin: 10vh 10vw;
+    color: var(--hitam);
+    font-size: 20px;
+}
+
+.about-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 32px;
+}
+
+.about-row:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.about-row img {
+    width: 40%;
+    max-width: 320px;
+    border-radius: 12px;
+}
+
+.about-row .about-text {
+    width: 60%;
+}
+
+.about-row h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.about-row p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* ----------------------- */
+
+/* PRODUCTS GALLERY // PAGE PRODUCTS */
+.products-gallery-title {
+    font-size: 40px;
+    text-align: center;
+    margin: 2vw;
+}
+.products-gallery-container {
+    margin: 4vw 0;
+    display: flex;
+    column-gap: 16px;
+    justify-content: center;
+}
+.product {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin: 0 8px;
+    width: 20vw;
+    height: 40vh;
+    text-align: center;
+    background-color: var(--background);
+    border-radius: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    justify-content: center;
+}
+#product-coffee {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/ice-coffee.jpg");
+}
+#product-coffee:hover {
+    background-size: 160%;
+}
+#product-non-coffee {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/mocktail.jpg");
+}
+#product-non-coffee:hover {
+    background-size: 120%;
+}
+#product-food {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/cake.jpg");
+}
+#product-food:hover {
+    background-size: 110%;
+}
+#product-coffee-beans {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/coffee-bean.jpg");
+}
+#product-coffee-beans:hover {
+    background-size: 160%;
+}
+.product h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--putih);
+}
+/* ----------------------- */
+
+/* CONTACT PAGE */
+.hero-contact {
+    height: 40vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/bg-cta.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-contact h1 {
+    color: var(--putih);
+    font-size: 64px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contact-container {
+    text-align: center;
+    margin: 48px 0;
+    padding: 0 10vw;
+    font-size: 20px;
+}
+
+.contact-desc h2, .social-media h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.contact-desc p {
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.contact-desc a {
+    color: var(--coklat-tua);
+    text-decoration: none;
+}
+
+.social-media {
+    margin-top: 48px;
+}
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    margin: 0 8px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.social-media a:hover {
+    background-color: var(--coklat-agak-tua);
+}
+.social-media a i {
+    font-size: 24px;
+    color: var(--hitam);
+}
+.social-media a:hover i {
+    color: var(--putih);
+}
+/* ----------------------- */
+
+/* FOOTER */
+.footer {
+    margin-top: 5vh;
+    background-color: var(--coklat-muda);
+    text-align: center;
+    padding: 16px;
+    font-size: 20px;
+}
